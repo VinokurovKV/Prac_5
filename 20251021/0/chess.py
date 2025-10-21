@@ -1,3 +1,4 @@
 from itertools import product
+from itertools import starmap
 
-print(list(product("ABCDEFGH", "12345678")))
+print(*starmap(str.__add__, product("ABCDEFGH", "12345678")))
