@@ -1,0 +1,6 @@
+q, w, e = Omnibus(), Omnibus(), Omnibus()
+q.q = q.w = q.e = 1
+w.q = w.w = w.e = 2
+e.q = e.w = e.e = 3
+del q.f, w.f, e.f
+print(q.e, w.w, e.q)

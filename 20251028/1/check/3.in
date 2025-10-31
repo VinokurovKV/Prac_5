@@ -1,0 +1,10 @@
+p, q = Omnibus(), Omnibus()
+p.gamma = [1, 2, 3]
+q.gamma = [4, 5, 6]
+print(p.gamma, q.gamma)
+del p.gamma
+print(p.gamma, q.gamma)
+p.gamma = [7, 8, 9]
+print(p.gamma, q.gamma)
+del q.gamma
+print(p.gamma, q.gamma)
