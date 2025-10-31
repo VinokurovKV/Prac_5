@@ -1,0 +1,7 @@
+a = Triangle((20, 35), (-200, 536), (275, -3))
+b = Triangle((12, -52), (303, 1), (-5, 416))
+print(abs(a), abs(b), sep = '---')
+print(a > b, b & a, a in b, bool(a))
+print(a < b, a & b, b in a, bool(b))
+print(a > a, a & a, a in a, bool(a))
+print(b < b, b & b, b in b, bool(b))

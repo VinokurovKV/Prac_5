@@ -1,0 +1,4 @@
+a(True):6.0 b(True):0.5 c(True):0.5 d(False):0
+b < a=True, d < a=True, c < a=True, b < c=False
+b in a=True, d in a=True, c in a=False
+a & b=True, a & c=False, b & c=False, d & a=False
