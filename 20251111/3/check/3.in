@@ -1,0 +1,33 @@
+v = Vowel(a=100, y=200)
+print(v, v.full, v.answer)
+
+try:
+    v.z = 10
+    print("ERROR: Should have failed")
+except AttributeError as e:
+    print(f"Correct: {e}") 
+
+try:
+    print(v.e)
+    print("ERROR: Should have failed")
+except AttributeError as e:
+    print(f"Correct: {e}")
+
+v.e = 300
+v.i = 400
+v.o = 500
+v.u = 600
+print(v, v.full)  # a: 100, e: 300, i: 400, o: 500, u: 600, y: 200 True
+
+print("Before:", v.full)
+v.full = False 
+print("After:", v.full)
+
+print(v.answer)
+try:
+    v.answer = 100
+    print("ERROR: Should have failed")
+except AttributeError as e:
+    print(f"Correct: {e}")
+
+print(v.a, v.e, v.i, v.o, v.u, v.y) 

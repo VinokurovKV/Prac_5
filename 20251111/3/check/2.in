@@ -1,0 +1,7 @@
+v4 = Vowel(a=1)
+print(v4.answer)
+try:
+    v4.answer = 100
+    print("ERROR: Should have failed")
+except AttributeError as e:
+    print(f"Correct: {e}")
