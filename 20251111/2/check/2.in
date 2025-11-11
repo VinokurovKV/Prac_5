@@ -1,0 +1,13 @@
+class G:
+    num = Num()
+
+g = G()
+print(g.num)
+g.num = 42
+print(g.num)
+g.num = "very long string here"
+print(g.num)
+g.num = {'a', 'b', 'c', 'd'} 
+print(g.num) 
+g.num = 7.7
+print(g.num)

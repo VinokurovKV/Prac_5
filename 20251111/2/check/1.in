@@ -1,0 +1,12 @@
+class D:
+    value = Num()
+
+x = D()
+y = D()
+x.value = 3.14
+y.value = "test string"
+print(x.value, y.value)
+x.value = (1, 2, 3, 4, 5, 6)
+print(x.value + y.value)
+y.value = 100
+print(x.value * y.value) 
