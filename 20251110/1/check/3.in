@@ -1,0 +1,6 @@
+a = DivStr("OIHEVOIAFobfoifbIPe@")
+print(list(a // 3))
+print(* a % 8 // 8, sep = "?")
+print((a.lower() % 3).upper())
+print(* a[-8:-2] // 1)
+print(f'<{DivStr()}>')

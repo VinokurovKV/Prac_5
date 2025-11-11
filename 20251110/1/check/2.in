@@ -1,0 +1,7 @@
+f = DivStr("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+print(*f // 5)         
+print(f % 5)            
+print(*f % 10 // 2)     
+print(f.lower() % 6)   
+print(*f[10:20] // 5)    
+print(f % 8 + DivStr("*") + f % 4) 
