@@ -1,0 +1,17 @@
+@objcount
+class A:
+    val = '~'
+    def __init__(self, value = None):
+        if value:
+            self.val = value
+        
+    def __str__(self):
+        return f'{self.val}'
+
+
+d = A(1234)
+a, b, c = A(), A(A(A())), A(12)
+print(a, b, c)
+print(A.counter)
+del a, b, c
+print(A.counter)
