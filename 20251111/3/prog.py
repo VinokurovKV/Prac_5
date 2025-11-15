@@ -23,9 +23,9 @@ class Vowel:
   
   def __setattr__(self, name, value):
     if name == 'answer':
-        raise AttributeError("Cannot set attribute 'answer'")
+        raise AttributeError
     elif name not in self.__slots__:
-        raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{name}'")
+        raise AttributeError
     elif name in self._vowels:
         object.__setattr__(self, name, value)
         self._update_full()
@@ -38,7 +38,7 @@ class Vowel:
     if name in Vowel._vowels: 
         value = object.__getattribute__(self, name)
         if value is None:
-            raise AttributeError(f"Vowel '{name}' not set")
+            raise AttributeError
         return value
     return object.__getattribute__(self, name)
   

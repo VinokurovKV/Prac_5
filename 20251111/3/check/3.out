@@ -1,9 +1,9 @@
 a: 100, y: 200 False 42
-Correct: 'Vowel' object has no attribute 'z'
-Correct: Vowel 'e' not set
+Correct: 
+Correct: 
 a: 100, e: 300, i: 400, o: 500, u: 600, y: 200 True
 Before: True
 After: True
 42
-Correct: Cannot set attribute 'answer'
+Correct: 
 100 300 400 500 600 200
