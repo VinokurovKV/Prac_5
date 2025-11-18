@@ -8,7 +8,7 @@ class SerCls:
         self.st = str(s)
 
     def __str__(self):
-        return ''.join([str(self.lst), str(self.dct), str(self.num), self.st])
+        return ' '.join([str(self.lst), str(self.dct), str(self.num), self.st])
 
 
 ser = SerCls([1, 2, 3], {11: 27}, 10, '123456')
