@@ -1,0 +1,5 @@
+__init__: (), {}
+toggle: (), {}
+Enabled: False
+toggle: (True,), {'immediate': False}
+Enabled: True

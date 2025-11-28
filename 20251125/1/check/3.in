@@ -1,0 +1,11 @@
+class Switcher(metaclass=dump):
+    def __init__(self, enabled=True):
+        self.enabled = enabled
+    
+    def toggle(self, new_state=False, immediate=True):
+        self.enabled = new_state
+        return f"Enabled: {self.enabled}"
+
+s = Switcher()
+print(s.toggle())
+print(s.toggle(True, immediate=False))
