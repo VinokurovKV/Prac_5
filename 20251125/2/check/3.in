@@ -1,0 +1,6 @@
+store 5 n
+store 1 result
+start: mul result n result
+sub n 1 n
+ifgt n 1 start
+out result

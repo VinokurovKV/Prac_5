@@ -1,0 +1,5 @@
+store 5 x
+store 3 y
+ifeq x 5 unknown_label
+out x
+out y
